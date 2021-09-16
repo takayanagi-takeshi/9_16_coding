@@ -7,16 +7,21 @@
   <title>Document</title>
 </head>
 <body>
+  <!--接続方法-->
   <form action="" method="post"></form>
+  <!--入力フォーム作成-->
   <input type="text" placeholder="例：リカレント　太郎"><br>
-  <input type="radio" name="gender" value="男性">男性
-  <input type="radio" name="gender" value="女性" checked>女性
+  <!--ボタン作成　/labelでボタン押す範囲変える-->
+  <input type="radio" name="gender" value="男性" id="male"><label for="male">男性</label>
+  <label><input type="radio" name="gender" value="女性" checked>女性</label>
   <input type="radio" name="gender" value="その他">その他<br>
+  <!--チェックボックス作成-->
   <input type="checkbox" name="color" value="赤" checked>赤
   <input type="checkbox" name="color" value="青">青
   <input type="checkbox" name="color" value="黄">黄
   <input type="checkbox" name="color" value="緑">緑<br>
   <input type="submit" value="送信する"><br>
+  <!--プルダウン作成-->
   <select>
     <option value="A">A</option>
     <option value="B">B</option>
@@ -25,12 +30,16 @@
     <option value="不明">不明</option>
   </select><br>
   <select>
-    <optgroup>
+    <!--グループ分けしたプルダウン作成-->
+    <optgroup label="哺乳類">
       <option value="A">くま</option>
     </optgroup>
-    <optgroup>
+    <optgroup label="爬虫類">
       <option value="B">へび</option>
     </optgroup>
-  </select>
+  </select><br>
+    <!--メッセージボックス作成-->
+  <textarea name="messsage" placeholder="メッセージを入力"></textarea>
+
 </body>
 </html>
